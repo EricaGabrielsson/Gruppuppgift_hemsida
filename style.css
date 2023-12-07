@@ -7,8 +7,8 @@ html, body {
 /* Whole page */
 body {
   margin-top: -22px;
-  /* background-color: rgb(174, 141, 131) */
-  background-image: url('https://cdn.mos.cms.futurecdn.net/4MLyNZ66GSMUp7z49Q8k3K.jpg');
+   background-color: black;
+ 
 
   /* Center all on page */
   display: flex;
@@ -19,15 +19,16 @@ body {
 /* All images */
 img {
   object-fit: contain;
+  border-radius: 10px;
 }
 
 /* Movie background */
 .movie-background {
-  height: 100vh;
-  width: 100%;
+  height: 55vh;
+  width: 105%;
   position: relative;
-  margin-bottom: 100px;
-  background-image: url('https://images.squarespace-cdn.com/content/5a78ab8490badee028bef0e9/1568935524292-TPSLMXHD9HE6PKN02YOG/Interstellar.jpg');
+  margin-bottom: 430px;
+  background-image: url('https://i.redd.it/10zutid8u6651.jpg');
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -35,42 +36,119 @@ img {
 
 /* Content on movie background */
 .movie-background .container {
-  background-color:grey;
-  padding: 30px;
+  background-color:rgba(128,0,128,0.3);
+  padding: 50px;
   position: absolute;
-  bottom: 0px;
-  left: 100px;
-  right: 100px;
-  display: flex;
+  top: 500px;
+  left: 0px;
+  right: 0px;
+  outline-style: dashed;
+  outline-color:orange;
+  outline-width: 15px;
+
 }
+
+.movie-background .cover {
+  float: right;
+  margin-right: 30px;
+  display: table-header-group;
+}
+
+.cover {
+  width: 100px;
+  height: 100px;
+ 
+  position: relative;
+
+
+}
+
+.cover2 {
+  width: 100px;
+  height: 100px;
+  
+  position: relative;
+
+}
+
+.cover3 {
+  width: 100px;
+  height: 100px;
+  position: relative;
+ 
+
+}
+
+.cat {
+  width: 70px;
+  height: 50px;
+  display: table-row;
+  position: absolute;
+}
+
+a {
+  color: hotpink;
+margin-left: 10px;
+} 
+
+a:hover {
+  color: blue;
+}
+
+a:link {
+  text-decoration: none;
+}
+
 
 /* Cover */
 .movie-background .container .cover img {
-  width: 230px;
+  width: 300px;
+
 }
 
 /* Content */
 .movie-background .container .content {
   padding-left: 30px;
+
 }
 
 /* Paragraph only in movie bacground */
 .movie-background .container .content p {
   color: #ffffff;
+  margin-right: 735px;
 }
 
 /* Main character */
 .main-character {
   display: flex;
-  width: 1040px;
+  width: 1020px;
+  color: white;
+  margin-right: 30px;
 }
+
+
+.main-character h2{
+  color: purple;
+  font-size: 70px;
+}
+
 
 /* Director */
 .director {
   display: flex;
   flex-direction: row-reverse;
-  width: 1040px;
+  width: 1020px;
+  color: white;
+  margin-bottom: 150px;
+  margin-top: 200px;
+
 }
+
+.director  h2{
+  color: purple;
+  font-size: 70px;
+}
+
 
 /* Rating */
 .rating {
@@ -80,32 +158,71 @@ img {
 
 /* Rating image */
 .rating .rate {
-  width: 40px;
+  width: 80px;
+  margin-right: 10px;
 }
 
 /* Rating title */
 .rating h4 {
   color: white;
-  font-size: 22px;
+  font-size: 60px;
 }
 
 .rating .big {
-  color: black;
-  font-size: 28px;
+  color: white;
+  font-size: 80px;
 }
 
 
 /* Typography */
 h1 {
   color: white;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Impact', Courier, monospace;
+  font-size: 90px;
+
 }
 
 .year {
-  color: aqua;
+  color: orange;
+  font-size: 30px;
 }
 
 .ChristopherNolan {
-  width: 408px;
+  width: 400px;
+  height: 600px;
+  margin-left: 40px;
+  object-fit: contain;
 }
 
+
+.Matthew_McConaughey {
+  width: 400px;
+  height: 500px;
+  margin-right: 40px;
+  object-fit: contain;
+}
+
+h2 {
+  color: white;
+  font-family: 'Impact', Courier, monospace;
+  text-align: center
+}
+h3 {
+  color: white;
+  font-family: 'arial', Courier, monospace;
+  font-size: 30px;
+  font-style: italic;
+  text-align: center
+}
+h4 {
+  color: white;
+  font-family: 'impact', Courier, monospace;
+  text-align: center
+}
+
+p {
+  color: white;
+  font-family: 'arial', Courier, monospace;
+font-size: 16px;
+text-align: justify
+}
